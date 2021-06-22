@@ -12,3 +12,4 @@ export * from './repository/PhotoErrorPhoto.repo';
 export * from './repository/PhotoLog.repo';
 export * from './repository/PhotoStatus.repo';
 export * from './repository/providers';
+export * from './repository/Base.repo';
