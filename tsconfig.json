@@ -1,5 +1,7 @@
 {
-  "compilerOptions": {
+  "include": ["src/**/*"]
+  ,"exclude": ["src/**/*.spec.ts"]
+  ,"compilerOptions": {
     "module": "commonjs",
     "declaration": true,
     "removeComments": true,
