@@ -2,33 +2,43 @@
   "name": "@jcwatson11/gbo",
   "version": "1.0.0",
   "description": "FH Global Business Objects project in nodejs",
+  "private": true,
   "main": "main.js",
-  "scripts": {
-    "test": "npm run test"
-  },
   "author": "Jon Watson",
   "license": "MIT",
+  "scripts": {
+    "test": "ts-mocha -p tsconfig.json 'src/**/*.spec.ts'",
+    "prepublish": "rm -rf dist && tsc --project tsconfig.json",
+    "coverage": "nyc npm run test && nyc report --reporter=text-lcov | coveralls",
+    "typedoc": "typedoc --out ./docs --exclude \"**/*.spec.ts,**/*.d.ts\" --tsconfig ./tsconfig.json ./src"
+  },
   "dependencies": {
     "@jcwatson11/sequelizeqsfind": "^1.0.12",
     "@nestjs/common": "^7.6.18",
+    "@nestjs/core": "^7.6.18",
     "@types/async": "^3.2.6",
+    "@types/chai": "^4.2.19",
+    "@types/chai-as-promised": "^7.1.4",
     "@types/dotenv": "^8.2.0",
+    "@types/mocha": "^8.2.2",
     "@types/sequelize": "^4.28.9",
     "async": "^3.2.0",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^9.0.1",
     "mysql2": "^2.2.5",
     "reflect-metadata": "^0.1.13",
+    "rxjs-compat": "^6.6.7",
     "sequelize": "^6.6.2",
     "sequelize-typescript": "^2.1.0",
     "tedious": "^11.0.9"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.18",
-    "@types/mocha": "^8.2.2",
     "@types/node": "^15.12.4",
     "@types/validator": "^13.1.4",
-    "chai": "^4.3.4",
-    "mocha": "^9.0.0",
+    "nyc": "^15.1.0",
     "ts-node": "^10.0.0",
+    "typedoc": "^0.21.0",
     "typescript": "^4.3.2"
   }
 }

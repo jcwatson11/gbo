@@ -1,8 +1,8 @@
-import {PhotoRepo} from './photo.repo';
-import {PhotoErrorRepo} from './photoerror.repo';
-import {PhotoErrorPhotoRepo} from './photoerrorphoto.repo';
-import {PhotoLogRepo} from './photolog.repo';
-import {PhotoStatusRepo} from './photostatus.repo';
+import {PhotoRepo} from './Photo.repo';
+import {PhotoErrorRepo} from './PhotoError.repo';
+import {PhotoErrorPhotoRepo} from './PhotoErrorPhoto.repo';
+import {PhotoLogRepo} from './PhotoLog.repo';
+import {PhotoStatusRepo} from './PhotoStatus.repo';
 
 export const FhRepositoryProviders = [
    PhotoRepo

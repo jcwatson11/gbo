@@ -1,7 +1,7 @@
 import "reflect-metadata";
 import * as dotenv from "dotenv";
 dotenv.config();
-import {Photo, PhotoStatus, PhotoErrorPhoto, PhotoError, PhotoLog} from "@jcwatson11/gbo";
+import {Photo, PhotoStatus, PhotoErrorPhoto, PhotoError, PhotoLog} from "./src/main";
 import {OperatorAliases} from "@jcwatson11/sequelizeqsfind";
 import {SequelizeOptions} from "sequelize-typescript";
 import {Dialect} from "sequelize/types";
