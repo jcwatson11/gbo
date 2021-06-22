@@ -2,8 +2,20 @@
   "name": "@jcwatson11/gbo",
   "version": "1.0.1",
   "description": "FH Global Business Objects project in nodejs",
-  "private": true,
-  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcwatson11/gbo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jcwatson11/gbo/issues"
+  },
+  "homepage": "https://github.com/jcwatson11/gbo#readme",
+  "keywords": [
+    "FH",
+    "Global Business Object",
+    "GBO"
+  ],
+  "main": "dist/main.js",
   "author": "Jon Watson",
   "license": "MIT",
   "scripts": {
