@@ -2,7 +2,6 @@
   "name": "@jcwatson11/gbo",
   "version": "1.0.0",
   "description": "FH Global Business Objects project in nodejs",
-  "private": true,
   "main": "main.js",
   "author": "Jon Watson",
   "license": "MIT",
