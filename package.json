@@ -1,6 +1,6 @@
 {
   "name": "@ffth/gbo",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "FH Global Business Objects project in nodejs",
   "repository": {
     "type": "git",
